@@ -13,6 +13,10 @@ export class DrivingListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onClick(mezzoT: HTMLInputElement, mezzoD : HTMLInputElement, mezzoTar : HTMLInputElement, mezzoVM : HTMLInputElement) : boolean{
+    console.log(`Adding article title: ${mezzoT} , ${mezzoD}, ${mezzoTar}, ${mezzoVM} `);
+    return false;
+  }
 
 }
 

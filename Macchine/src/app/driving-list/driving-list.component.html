@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let macchine of listaDriving" >
    {{macchine.tipo}} | {{macchine.descrizione}} | {{macchine.tariffa}} | {{macchine.valutazionemedia}}
-   <button>noleggia</button>
+   <button (click)="onClick(macchine.tipo,macchine.descrizione, macchine.tariffa,macchine.valutazionemedia)">noleggia</button>
   </li>
 </ul>
